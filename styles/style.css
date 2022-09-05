@@ -35,10 +35,12 @@ h1{
     font-size: var(--26px);
     color: var(--white);
     text-transform: uppercase;
+    font-weight: 400;
 }
 p{
     font-size: var(--15px);
     color: var(--pearlViolet);
+    font-weight: 400;
 }
 img{
     max-width: 100%;
@@ -78,6 +80,11 @@ section p{
 }
 .secundary-color{
     color: var(--secundaryColor);
+    font-weight: bold;
+}
+.error{
+    color:#FB3E3E;
+    font-weight: bold;
 }
 .images-container{
     display: flex;
@@ -106,5 +113,33 @@ section p{
     color: var(--mainColor);
     font-weight: bold;
     border-radius: 28px;
+}
+.submit-button:hover{
+    background: #B3FFE2;
+    transition: 150ms;
+}
 
+@media (min-width: 768px){
+    h1{
+        font-size: var(--48px);
+    }
+    p{
+        font-size: var(--18px);
+    }
+    main{
+        text-align: left;
+    }
+    section{
+        background-color: var(--mainColor);
+        height: 635px;
+        width: 510px;
+    }
+    .images-container{
+        gap: 40px;
+        justify-content: left;
+    }
+    .images-container img{
+        height: 30px;
+        width: 120px;
+    }
 }
