@@ -1,0 +1,91 @@
+:root {
+    --15px: 0.9375rem;
+    --18px: 1.125rem;
+    --26px: 1.625rem;
+    --48px: 3rem;
+    --52px: 3.25rem;
+
+    /* Colors */
+    --white: #FFFFFF;
+    --mainColor: #121725;
+    --secundaryColor: #54E6AF;
+    --darkBlue: #2C344B;
+    --shadeBlue: #5A668A;
+    --pearlViolet:#C2CBE5;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Chivo', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* font-size: 1.6rem; */
+}
+/* Globales */
+ .container{
+    /* max-width: calc(120rem / 16);
+    width: 90%;
+    margin: 0 auto; */
+    background-image: url("../assets/tablet/image-host.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: var(--26px);
+    color: var(--white);
+    text-transform: uppercase;
+}
+p{
+    font-size: var(--15px);
+    color: var(--pearlViolet);
+}
+img{
+    max-width: 100%;
+}
+/* Utilities */
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.text-center{
+    text-align: center;
+}
+main{
+    background-color: var(--mainColor);
+}
+.secundary-color{
+    color: var(--secundaryColor);
+}
+.images-container{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+.images-container img{
+    height: 18px;
+}
+.input-email{
+    border: none;
+    height: 46px;
+    width: 327px;
+    background-color: var(--darkBlue);
+    color: var(--pearlViolet);
+    border-radius: 28px;
+    padding-left: 32px;
+}
+.submit-button{
+    border: none;
+    height: 46px;
+    width: 327px;
+    background-color: var(--secundaryColor);
+    color: var(--mainColor);
+    font-weight: bold;
+    border-radius: 28px;
+
+}
